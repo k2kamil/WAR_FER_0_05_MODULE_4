@@ -1,17 +1,11 @@
-/**
----
-Na stronie znajdują się trzy elementy div.
+document.addEventListener ('DOMContentLoaded', function () {
+    const boxes = document.querySelectorAll('.box');
 
-Napiszcie wspólny event zmieniający kolor tła tylko w klikniętym divie.
-**Użyj do tego słowa kluczowego this**.
+    boxes.forEach(function(el){
+        el.addEventListener('click', function (e) {
+            var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            this.style.backgroundColor = randomColor;
+        });
+    });
+});
 
-Pamiętajcie, żeby wszystko pisać w evencie DOMContentLoaded.
-
-Hint: Żeby uzyskać losowy kolor użyj poniższego kodu:
-var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-
----
-<center><a href="lab.dom.eventy.podstawy2/task3.html" target="_blank">OTWÓRZ STRONĘ W NOWEJ KARCIE</a></center>
-
-
- */
