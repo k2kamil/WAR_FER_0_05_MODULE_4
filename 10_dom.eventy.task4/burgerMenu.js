@@ -24,3 +24,5 @@ document.addEventListener('DOMContentLoaded', function () {
     this.addEventListener('click', blockRefresh);
 });
 
+//Komentarz dla mnie - to zadanie powinno być oznaczone jako solved w 2. commicie o nazwie zad1 - zad9
+
